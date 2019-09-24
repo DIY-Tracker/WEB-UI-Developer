@@ -10,3 +10,11 @@ var scroll = setInterval(
         }
         devs.scrollBy(scrollByAmount, 0);
     }, 12);
+document.addEventListener('click', function (event) {
+    target = event.target;
+    devParent = target.closest(".dev");
+    console.log(devParent.className);
+    console.log(devParent);
+    // console.log(event.target);
+
+}, false);

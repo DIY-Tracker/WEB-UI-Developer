@@ -8,7 +8,7 @@
   width: 80%;
   margin: 0 auto;
 }
-header header,
+header,
 footer {
   background-color: #3f3f3f;
   height: 5vh;
@@ -17,7 +17,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-header header h3,
+header h3,
 footer h3 {
   font-size: 2rem;
 }
@@ -60,7 +60,7 @@ footer h3 {
   margin: 5%;
   font-size: 2.2rem;
 }
-.flip-horizontal-bottom {
+.flipAnimation {
   animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 @keyframes flip-horizontal-bottom {
