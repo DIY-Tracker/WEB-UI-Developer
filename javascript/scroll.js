@@ -1,15 +1,15 @@
 document.addEventListener('click', function (event) {
-    cardA = event.target.closest(".cardSideA");
-    if(cardA == null){ return; }
-    if(cardA.className.includes(" flip flipBack ")){
-        cardA.className = cardA.className.replace(" flip flipBack ", "");
+    frontFace = event.target.closest(".dev");
+    if(frontFace == null){ return; }
+    if(frontFace.className.includes(" flip flipBack ")){
+        frontFace.className = frontFace.className.replace(" flip flipBack ", "");
         console.log("remove");
-    }else if(cardA.className.includes(" flip ")){
-        cardA.className = cardA.className.replace(" flip ", " flip flipBack ");
+    }else if(frontFace.className.includes(" flip ")){
+        frontFace.className = frontFace.className.replace(" flip ", " flip flipBack ");
         setTimeout(function(){
-            cardA.className = cardA.className.replace(" flip flipBack ", "");
+            frontFace.className = frontFace.className.replace(" flip flipBack ", "");
         }, .4*(1000));
     }else{ 
-        cardA.className += " flip "; 
+        frontFace.className += " flip "; 
     }
 }, false);
