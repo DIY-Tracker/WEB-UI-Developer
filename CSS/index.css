@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  background-color: #5c9ea5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Saira Stencil One', cursive;
+  color: black;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.navbar {
+  top: 0;
+  width: 70%;
+  border-radius: 10px;
+  height: 155px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #001C34;
+}
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.navbar .banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #001C34;
+}
+.navbar .banner img {
+  height: 100px;
+  object-fit: contain;
+}
+.navbar .banner h1 {
+  font-size: 5rem;
+  padding: 0 30px;
+  line-height: 100px;
+}
+.navbar nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #001C34;
+}
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.navbar nav a:hover {
+  color: #5c9ea5;
+  font-weight: bold;
+}
+footer {
+  color: white;
+  background: #001C34;
+  padding: 20px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.intro .top-imgs {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.intro .top-imgs img {
+  height: 300px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #001C34;
+}
+@media (max-width: 500px) {
+  .intro .top-imgs img {
+    display: none;
+  }
+}
+.intro .sectionBar {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.intro .sectionBar a,
+.intro .sectionBar p {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 3rem;
+}
+.intro .summary {
+  margin: 10px auto;
+  width: 70%;
+}
+.intro .btn {
+  color: white;
+  background: #39B000;
+  text-align: center;
+  height: 40px;
+  width: 175px;
+  padding: 10px;
+  border: 1px solid #001C34;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .intro .btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.intro .btn:hover {
+  color: black;
+  background-color: grey;
+}
+.fourSquare {
+  margin: 50px auto;
+  width: 90%;
+  border-top: 5px solid #001C34;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .fourSquare {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.fourSquare .descriptions {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+.fourSquare .descriptions h2,
+.fourSquare .descriptions p {
+  padding: 15px;
+  width: 80%;
+}
+.fourSquare .small-img {
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #001C34;
+}

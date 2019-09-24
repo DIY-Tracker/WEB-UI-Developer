@@ -1,0 +1,27 @@
+.mobileFlex(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayNoImage(){
+    display: none;
+}
+
+.mobileMargin(@width, @tb-margin){
+    width: @width;
+    margin: @tb-margin auto;
+}
+
+// Parametric Mixin for Button Style
+.buttonStyle(@font-color, @background-color){
+    color: @font-color;
+    background: @background-color;
+    text-align: center;
+    height: 40px;
+    width: 175px;
+    padding: 10px;
+    border: 1px solid @navy;
+    border-radius: 8px;
+    font-size: 2rem;
+}
