@@ -16,7 +16,15 @@
       margin: 15px 0;
       border-radius: 10px;
       border: 1px solid @navy;
+    }
 
+    .carpentry {
+      @media @phone {
+        height: 180px;
+        margin: 15px auto;
+      }
+    }
+    .project {
       @media @phone {
         display: none;
       }
@@ -35,6 +43,10 @@
     color: black;
     font-family: 'Saira Stencil One', cursive;
     font-size: 3rem;
+
+    @media @phone {
+      font-size: 2rem;
+    }
     }
   }
 
@@ -47,7 +59,7 @@
     .buttonStyle(white, @light-green);
 
     @media @phone {
-      .mobileMargin(100%, 0);
+      .mobileMargin(50%, 0);
     }
   }
 
@@ -66,8 +78,10 @@
   justify-content: space-evenly;
 
   @media @phone {
+    width: 85%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .descriptions {
@@ -77,6 +91,12 @@
     align-items: center;
     text-align: center;
     padding: 15px;
+
+    @media @phone {
+      width: 90%;
+      text-align: center;
+      border-bottom: 5px solid @navy;
+    }
     
     h2, p {
       padding: 15px;
@@ -88,5 +108,10 @@
     height: 300px;
     border-radius: 10px;
     border: 1px solid @navy;
+
+    @media @phone {
+      height: 200px;
+
+    }
   }
 }
