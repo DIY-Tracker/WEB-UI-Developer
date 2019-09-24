@@ -13,8 +13,14 @@ var scroll = setInterval(
 document.addEventListener('click', function (event) {
     target = event.target;
     devParent = target.closest(".dev");
-    console.log(devParent.className);
+    if(devParent == null){
+        return;
+    }
+    if(devParent.className.includes(" flipAnimation")){
+        devParent.className = devParent.className.replace(" flipAnimation", '');
+    }else {
+        devParent.className += " flipAnimation"
+    }
     console.log(devParent);
-    // console.log(event.target);
 
 }, false);
