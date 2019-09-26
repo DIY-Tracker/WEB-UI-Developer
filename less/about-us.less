@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Titillium+Web");
+@import url("https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap");
+@import "variables";
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    @media @tablet{
+        width: 100%;
+    }
+}
+footer{
+    width: 100%;
+}
+header {
+    .navbar {
+        width: 100%;
+        @media @phone{
+            height: auto;
+        }
+        nav{
+            @media @phone{
+                width: 100%;
+                background-color: transparent;
+                flex-direction: column;
+            }
+            a{
+                @media @phone{
+                    padding: 2%;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+#product {
+    margin: 1% auto;
+    display: flex;
+    @media @phone{
+        flex-direction: column-reverse;
+    }
+    @media @tablet{
+        padding: 0 1%;
+    }
+    img {
+        width: 60%;
+        border-radius: 10px;
+        content: url("https://unsplash.com/photos/NUUjVj4YQLA/download?force=true"); //Placeholder
+        @media @phone{
+            width: 100%;
+        }
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+        @media @phone{
+            width: 90%;
+            margin: 2% auto;
+        }
+    }
+}
+#devs {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    margin: 5% auto;
+    @media @phone{
+        overflow-x: auto;
+        flex-wrap: wrap;
+    }
+    @media @tablet{
+        overflow-x: auto;
+        flex-wrap: wrap;
+    }
+    .dev {
+        @media @phone{
+            width: 48%;
+        }
+        @media @tablet{
+            width: 48%;
+        }
+        box-sizing: border-box;
+        width: 20%;
+        margin: 1%;
+        flex: 0 0 auto;
+        background: @navy;
+        border-radius: 10px;
+        border: 2px solid @navy;
+
+        img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            // border-radius: 10px;
+        }
+
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin: 5%;
+            font-size: 2rem;
+            padding: 3% 2%;
+        }
+        &.flip{
+            animation: flipAnimation 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
+        &.flipBack{
+            animation: flipAnimationReverse 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
+    }
+}
+@keyframes flipAnimation {
+    0% { transform: rotateX(0); }
+    100% { transform: rotateX(-180deg); }
+}
+@keyframes flipAnimationReverse {
+    0% { transform: rotateX(-180deg); }
+    100% { transform: rotateX(0); }
+}
