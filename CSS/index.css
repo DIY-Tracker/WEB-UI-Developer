@@ -167,7 +167,7 @@ p {
 }
 .navbar {
   top: 0;
-  width: 70%;
+  width: 90%;
   border-radius: 10px;
   margin: 0 auto;
   display: flex;
@@ -206,19 +206,19 @@ p {
 }
 .navbar .banner h1 {
   font-size: 5rem;
-  padding: 0 30px;
   line-height: 100px;
 }
 .navbar nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
   background-color: #001C34;
 }
 @media (max-width: 800px) {
   .navbar nav {
     width: 90%;
+    display: flex;
+    justify-content: space-around;
   }
 }
 @media (max-width: 500px) {
@@ -231,21 +231,38 @@ p {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.6rem;
+  padding: 10px;
+  margin: 10px;
 }
 .navbar nav a:hover {
-  color: #5c9ea5;
+  color: black;
   font-weight: bold;
+  background-color: #39B000;
+  border-radius: 5px;
 }
 footer {
-  color: white;
   background: #001C34;
-  padding: 20px 0;
   border-radius: 10px;
+  padding: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 90%;
   margin: 0 auto;
+}
+footer .copyright {
+  color: white;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+footer .icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer i {
+  font-size: 30px;
+  color: white;
 }
 .intro {
   display: flex;
@@ -329,7 +346,8 @@ footer {
   width: 70%;
 }
 .intro .btn {
-  color: white;
+  color: black;
+  font-weight: bold;
   background: #39B000;
   text-align: center;
   height: 40px;
@@ -346,8 +364,8 @@ footer {
   }
 }
 .intro .btn:hover {
-  color: black;
-  background-color: grey;
+  color: white;
+  background-color: #001C34;
 }
 .fourSquare {
   margin: 50px auto;

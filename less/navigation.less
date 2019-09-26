@@ -1,6 +1,6 @@
 .navbar {
     top: 0;
-    width: 70%;
+    width: 90%;
     border-radius: 10px;
     margin: 0 auto;
     display: flex;
@@ -38,7 +38,6 @@
 
         h1 {
             font-size: 5rem;
-            padding: 0 30px;
             line-height: 100px;
         }
     }
@@ -47,11 +46,12 @@
         width: 50%;
         display: flex;
         justify-content: space-between;
-        padding: 15px;
         background-color: @navy;
 
         @media @tablet {
             width: 90%;
+            display: flex;
+            justify-content: space-around;
         }
 
         @media @phone {
@@ -64,10 +64,15 @@
         text-decoration: none;
         font-weight: bold;
         font-size: 1.6rem;
+        padding: 10px;
+        margin: 10px;
     }
 
     nav a:hover{
-        color: @sky-blue;
-        font-weight: bold; 
+        color: black;
+        font-weight: bold;
+        background-color: @light-green;
+        // border: 1px solid black;
+        border-radius: 5px;
     }
 }
