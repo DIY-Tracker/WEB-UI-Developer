@@ -1,9 +1,7 @@
 .navbar {
-    // position: fixed;
     top: 0;
     width: 70%;
     border-radius: 10px;
-    height: 155px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -16,6 +14,7 @@
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
+        border-radius: 0px;
     }
 
     .banner {
@@ -28,8 +27,12 @@
         border-top-right-radius: 10px;
         border: 1px solid @navy;
 
+        @media @phone {
+            border-radius: 0;
+        }
+
         img {
-            height: 100px;
+            width: 10%;
             object-fit: contain;
         }
 
@@ -46,6 +49,14 @@
         justify-content: space-between;
         padding: 15px;
         background-color: @navy;
+
+        @media @tablet {
+            width: 90%;
+        }
+
+        @media @phone {
+            width: 100%;
+        }
     }
 
     nav a {
