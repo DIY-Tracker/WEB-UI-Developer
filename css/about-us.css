@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACH55Q3Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdMPmCA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Saira Stencil One Regular'), local('SairaStencilOne-Regular'), url(https://fonts.gstatic.com/s/sairastencilone/v1/SLXSc03I6HkvZGJ1GvvipLoYSTEL9DsLYQw.ttf) format('truetype');
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+}
+header .navbar {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  header .navbar {
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  header .navbar nav {
+    width: 100%;
+    background-color: transparent;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  header .navbar nav a {
+    padding: 2%;
+    font-size: 2rem;
+  }
+}
+#product {
+  margin: 1% auto;
+  display: flex;
+}
+@media (max-width: 500px) {
+  #product {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  #product {
+    padding: 0 1%;
+  }
+}
+#product img {
+  width: 60%;
+  border-radius: 10px;
+  content: url("https://unsplash.com/photos/NUUjVj4YQLA/download?force=true");
+}
+@media (max-width: 500px) {
+  #product img {
+    width: 100%;
+  }
+}
+#product #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#product #content h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+#product #content p {
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  #product #content {
+    width: 90%;
+    margin: 2% auto;
+  }
+}
+#devs {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  margin: 5% auto;
+}
+@media (max-width: 500px) {
+  #devs {
+    overflow-x: auto;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  #devs {
+    overflow-x: auto;
+    flex-wrap: wrap;
+  }
+}
+#devs .dev {
+  box-sizing: border-box;
+  width: 20%;
+  margin: 1%;
+  flex: 0 0 auto;
+  background: #001C34;
+  border-radius: 10px;
+  border: 2px solid #001C34;
+}
+@media (max-width: 500px) {
+  #devs .dev {
+    width: 48%;
+  }
+}
+@media (max-width: 800px) {
+  #devs .dev {
+    width: 48%;
+  }
+}
+#devs .dev img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#devs .dev h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 5%;
+  font-size: 2rem;
+  padding: 3% 2%;
+}
+#devs .dev.flip {
+  animation: flipAnimation 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+#devs .dev.flipBack {
+  animation: flipAnimationReverse 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@keyframes flipAnimation {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+@keyframes flipAnimationReverse {
+  0% {
+    transform: rotateX(-180deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}

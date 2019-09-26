@@ -68,9 +68,6 @@ header {
         }
     }
 }
-.dev.flipAnimation{
-    animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
 #devs {
     width: 100%;
     display: flex;
@@ -115,15 +112,19 @@ header {
             font-size: 2rem;
             padding: 3% 2%;
         }
+        &.flip{
+            animation: flipAnimation 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
+        &.flipBack{
+            animation: flipAnimationReverse 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
     }
 }
-@keyframes flip-horizontal-bottom {
-    0% {
-      -webkit-transform: rotateX(0);
-              transform: rotateX(0);
-    }
-    100% {
-      -webkit-transform: rotateX(-180deg);
-              transform: rotateX(-180deg);
-    }
-  }
+@keyframes flipAnimation {
+    0% { transform: rotateX(0); }
+    100% { transform: rotateX(-180deg); }
+}
+@keyframes flipAnimationReverse {
+    0% { transform: rotateX(-180deg); }
+    100% { transform: rotateX(0); }
+}
