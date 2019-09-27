@@ -18,7 +18,7 @@
   src: local('Saira Stencil One Regular'), local('SairaStencilOne-Regular'), url(https://fonts.gstatic.com/s/sairastencilone/v1/SLXSc03I6HkvZGJ1GvvipLoYSTEL9DsLYQw.ttf) format('truetype');
 }
 .container {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 @media (max-width: 800px) {
@@ -27,6 +27,7 @@
   }
 }
 footer {
+  color: white;
   width: 100%;
 }
 header .navbar {
@@ -53,6 +54,7 @@ header .navbar {
 #product {
   margin: 1% auto;
   display: flex;
+  justify-content: space-evenly;
 }
 @media (max-width: 500px) {
   #product {
@@ -77,6 +79,7 @@ header .navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 30%;
 }
 #product #content h1 {
   text-align: center;
@@ -92,7 +95,7 @@ header .navbar {
   }
 }
 #devs {
-  width: 100%;
+  width: 95%;
   display: flex;
   overflow-x: hidden;
   margin: 5% auto;
@@ -117,6 +120,7 @@ header .navbar {
   background: #001C34;
   border-radius: 10px;
   border: 2px solid #001C34;
+  text-align: center;
 }
 @media (max-width: 500px) {
   #devs .dev {
@@ -133,14 +137,26 @@ header .navbar {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-#devs .dev h2 {
+#devs .dev .lower {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3% 0;
+}
+#devs .dev .lower h2 {
   font-family: 'Ubuntu', sans-serif;
   color: white;
   font-weight: bold;
-  text-align: center;
-  margin: 5%;
   font-size: 2rem;
-  padding: 3% 2%;
+}
+#devs .dev .lower a {
+  text-decoration: none;
+}
+#devs .dev .lower a i {
+  font-size: 2rem;
+  color: white;
 }
 #devs .dev.flip {
   animation: flipAnimation 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
