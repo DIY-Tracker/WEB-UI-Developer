@@ -3,13 +3,14 @@
 @import "variables";
 
 .container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     @media @tablet{
         width: 100%;
     }
 }
 footer{
+    color: white;
     width: 100%;
 }
 header {
@@ -37,6 +38,7 @@ header {
 #product {
     margin: 1% auto;
     display: flex;
+    justify-content: space-evenly;
     @media @phone{
         flex-direction: column-reverse;
     }
@@ -54,6 +56,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 30%;
         h1 {
             text-align: center;
             font-size: 2rem;
@@ -68,7 +71,7 @@ header {
     }
 }
 #devs {
-    width: 100%;
+    width: 95%;
     display: flex;
     overflow-x: hidden;
     margin: 5% auto;
@@ -94,6 +97,7 @@ header {
         background: @navy;
         border-radius: 10px;
         border: 2px solid @navy;
+        text-align: center; 
 
         img {
             width: 100%;
@@ -101,16 +105,28 @@ header {
             border-top-right-radius: 10px;
             // border-radius: 10px;
         }
-
-        h2 {
-            font-family: 'Ubuntu', sans-serif;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            margin: 5%;
-            font-size: 2rem;
-            padding: 3% 2%;
-        }
+        .lower {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3% 0;
+            h2 {
+                font-family: 'Ubuntu', sans-serif;
+                color: white;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+            a{
+                text-decoration: none;
+                i{
+                    font-size:2rem;
+                    color:white;
+                }
+            }
+          }
+        
         &.flip{
             animation: flipAnimation 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         }
