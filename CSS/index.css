@@ -345,6 +345,9 @@ footer i {
   margin: 10px auto;
   width: 70%;
 }
+.intro .signUpLink {
+  text-decoration: none;
+}
 .intro .btn {
   color: black;
   font-weight: bold;
